@@ -1,0 +1,18 @@
+=========================================
+📅 PLAN DE SESIÓN - MAÑANA 7:05 AM
+=========================================
+
+1. VERIFICACIÓN INICIAL:
+   - [ ] Abrir terminal y ejecutar: streamlit run main.py
+   - [ ] Verificar "✅ IA Conectada" y "✅ Alertas Activas" en Configuración.
+
+2. ESTRATEGIA:
+   - Timeframe: M15 (Botón "M15 🕒").
+   - Modo: Intraday Agresivo (Ya configurado internamente).
+   - Objetivo: Recuperación de inversión.
+
+3. NOTAS IMPORTANTES:
+   - La API Key de DeepSeek y Telegram ya están guardadas en .env.
+   - No es necesario re-configurar nada, solo iniciar.
+
+¡A descansar! El código está listo para mañana.

@@ -1,0 +1,30 @@
+COMO OBTENER EL ARCHIVO .APK REAL
+=================================
+
+Como esta aplicación está hecha en Python (Streamlit), no se puede "guardar como .apk" directamente desde el código. Funciona como un servidor web.
+
+Sin embargo, puedes convertirla en un APK instalable siguiendo estos pasos en 1 minuto:
+
+OPCIÓN 1: MODO APP WEB (Recomendado, más rápido)
+------------------------------------------------
+1. Ejecuta el archivo `mobile_launcher.py` que he creado.
+2. Escanea el código QR con tu móvil.
+3. En Chrome (Android), toca los 3 puntos -> "Agregar a la pantalla principal".
+   -> Esto crea un ícono de App real y funciona a pantalla completa sin barra de navegación.
+
+OPCIÓN 2: GENERAR UN ARCHIVO .APK REAL
+--------------------------------------
+Si necesitas enviar el archivo por WhatsApp o instalarlo, necesitas un "envoltorio".
+
+1. Sube tu código a GitHub y despliégalo en Streamlit Cloud (es gratis).
+   Obtendrás una URL como: https://tu-app-trading.streamlit.app
+
+2. Entra en una web gratuita de conversión "Web to App" como:
+   - https://www.webintoapp.com
+   - https://appsgeyser.com
+
+3. Pega tu URL de Streamlit.
+4. Sube el ícono de tu app.
+5. Descarga el archivo .apk generado.
+
+Ese archivo .apk sí lo puedes instalar y compartir.

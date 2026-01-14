@@ -1,0 +1,58 @@
+2026-01-08T02:16:10.873380 EURUSD Object of type bool is not JSON serializable
+2026-01-08T02:16:12.613947 USDJPY Object of type bool is not JSON serializable
+2026-01-08T02:16:14.585184 GBPUSD Object of type bool is not JSON serializable
+2026-01-08T02:16:16.526070 USDCAD Object of type bool is not JSON serializable
+2026-01-08T02:16:18.495016 USDCHF Object of type bool is not JSON serializable
+2026-01-08T02:16:33.265599 EURUSD Object of type bool is not JSON serializable
+2026-01-08T02:16:35.130215 USDJPY Object of type bool is not JSON serializable
+2026-01-08T02:16:37.102860 GBPUSD Object of type bool is not JSON serializable
+2026-01-08T02:16:39.152345 USDCAD Object of type bool is not JSON serializable
+2026-01-08T02:16:41.155930 USDCHF Object of type bool is not JSON serializable
+2026-01-08T02:20:13.735061 EURUSD Object of type bool is not JSON serializable
+2026-01-08T02:20:15.550237 USDJPY Object of type bool is not JSON serializable
+2026-01-08T02:20:17.775213 GBPUSD Object of type bool is not JSON serializable
+2026-01-08T02:20:19.506352 USDCAD Object of type bool is not JSON serializable
+2026-01-08T02:20:21.491275 USDCHF Object of type bool is not JSON serializable
+2026-01-08T02:22:59.659831 EURUSD Object of type bool is not JSON serializable
+2026-01-08T02:23:01.255161 USDJPY Object of type bool is not JSON serializable
+2026-01-08T02:23:02.750330 GBPUSD Object of type bool is not JSON serializable
+2026-01-08T02:23:04.479485 USDCAD Object of type bool is not JSON serializable
+2026-01-08T02:23:06.165389 USDCHF Object of type bool is not JSON serializable
+2026-01-08T02:25:45.332509 EURUSD Object of type bool is not JSON serializable
+2026-01-08T02:25:47.325190 USDJPY Object of type bool is not JSON serializable
+2026-01-08T02:25:49.502407 GBPUSD Object of type bool is not JSON serializable
+2026-01-08T02:25:51.706031 USDCAD Object of type bool is not JSON serializable
+2026-01-08T02:25:53.934244 USDCHF Object of type bool is not JSON serializable
+2026-01-08T02:28:22.121679 EURUSD Object of type bool is not JSON serializable
+2026-01-08T02:28:23.989280 USDJPY Object of type bool is not JSON serializable
+2026-01-08T02:28:26.075884 GBPUSD Object of type bool is not JSON serializable
+2026-01-08T02:28:28.034814 USDCAD Object of type bool is not JSON serializable
+2026-01-08T02:28:29.941763 USDCHF Object of type bool is not JSON serializable
+2026-01-08T02:32:14.844409 EURUSD Object of type bool is not JSON serializable
+2026-01-08T02:32:16.199064 USDJPY Object of type bool is not JSON serializable
+2026-01-08T02:32:18.016268 GBPUSD Object of type bool is not JSON serializable
+2026-01-08T02:32:19.516318 USDCAD Object of type bool is not JSON serializable
+2026-01-08T02:32:20.961904 USDCHF Object of type bool is not JSON serializable
+2026-01-08T02:34:25.311191 EURUSD Object of type bool is not JSON serializable
+2026-01-08T02:34:26.926153 USDJPY Object of type bool is not JSON serializable
+2026-01-08T02:34:28.978164 GBPUSD Object of type bool is not JSON serializable
+2026-01-08T02:34:30.666040 USDCAD Object of type bool is not JSON serializable
+2026-01-08T02:34:32.674148 USDCHF Object of type bool is not JSON serializable
+2026-01-09T00:59:52.115682 EURUSD name 'macro_context' is not defined
+2026-01-09T00:59:54.813948 USDJPY name 'macro_context' is not defined
+2026-01-09T00:59:57.580572 GBPUSD name 'macro_context' is not defined
+2026-01-09T00:59:59.989507 USDCAD name 'macro_context' is not defined
+2026-01-09T01:00:02.802399 USDCHF name 'macro_context' is not defined
+2026-01-09T01:00:05.583543 AUDUSD name 'macro_context' is not defined
+2026-01-09T01:00:08.151453 NZDUSD name 'macro_context' is not defined
+2026-01-09T01:00:10.567466 EURJPY name 'macro_context' is not defined
+2026-01-09T01:00:13.358179 GBPJPY name 'macro_context' is not defined
+2026-01-09T01:00:15.324562 EURGBP name 'macro_context' is not defined
+2026-01-09T01:00:17.924222 AUDJPY name 'macro_context' is not defined
+2026-01-09T01:00:20.940194 EURAUD name 'macro_context' is not defined
+2026-01-09T01:00:23.907530 GBPAUD name 'macro_context' is not defined
+2026-01-09T01:00:26.538373 GBPCAD name 'macro_context' is not defined
+2026-01-09T01:00:29.043033 CADJPY name 'macro_context' is not defined
+2026-01-09T01:00:31.488202 XAUUSD (GOLD) name 'macro_context' is not defined
+2026-01-09T01:00:34.383174 BITCOIN name 'macro_context' is not defined
+2026-01-09T01:00:37.575106 ETHEREUM name 'macro_context' is not defined
