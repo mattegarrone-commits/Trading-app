@@ -528,38 +528,50 @@ def main_gui():
         # --- CARGAR CONFIGURACIÓN ROBUSTA (Local .env + Cloud Secrets) ---
         def load_env_robust():
             config = {}
-            # 1. Intentar cargar desde .env local
-            if os.path.exists(".env"):
-                try:
-                    with open(".env", "r") as f:
-                        for line in f:
-                            line = line.strip()
-                            if line and "=" in line and not line.startswith("#"):
-                                key, val = line.split("=", 1)
-                                config[key.strip()] = val.strip().strip('"').strip("'")
-                except: pass
             
-            # 2. Sobreescribir con variables de entorno
-            for k, v in os.environ.items():
-                config[k] = v
-                
-            # 3. Sobreescribir con Streamlit Secrets (para Cloud)
+            # 1. PRIORIDAD: Streamlit Secrets (Cloud)
             try:
-                # Iterar sobre secretos planos
-                for k, v in st.secrets.items():
-                    if isinstance(v, str):
-                        config[k] = v
-                # Iterar sobre secciones (ej: telegram.token)
+                # Leer DeepSeek
+                if "deepseek" in st.secrets:
+                    config["DEEPSEEK_API_KEY"] = st.secrets["deepseek"].get("api_key", "")
+                
+                # Leer Telegram
                 if "telegram" in st.secrets:
                     config["TELEGRAM_BOT_TOKEN"] = st.secrets["telegram"].get("token", "")
                     config["TELEGRAM_CHAT_ID"] = st.secrets["telegram"].get("chat_id", "")
-                if "deepseek" in st.secrets:
-                    config["DEEPSEEK_API_KEY"] = st.secrets["deepseek"].get("api_key", "")
-            except: pass
+                    # Mapear a nombres ADMIN para el sistema oculto
+                    config["TELEGRAM_ADMIN_TOKEN"] = config["TELEGRAM_BOT_TOKEN"]
+                    config["TELEGRAM_ADMIN_CHAT_ID"] = config["TELEGRAM_CHAT_ID"]
+            except Exception as e:
+                # st.error(f"Error leyendo secretos: {e}")
+                pass
+
+            # 2. Si no hay secretos, intentar cargar .env local
+            if not config.get("DEEPSEEK_API_KEY"):
+                if os.path.exists(".env"):
+                    try:
+                        with open(".env", "r") as f:
+                            for line in f:
+                                line = line.strip()
+                                if line and "=" in line and not line.startswith("#"):
+                                    key, val = line.split("=", 1)
+                                    config[key.strip()] = val.strip().strip('"').strip("'")
+                    except: pass
+                
+                # 3. Variables de entorno del sistema
+                for k, v in os.environ.items():
+                    if k not in config: # No sobrescribir lo ya encontrado
+                        config[k] = v
             
             return config
             
         env_config = load_env_robust()
+        
+        # Inyectar en OS environ para que otras librerías las vean
+        if env_config.get("TELEGRAM_ADMIN_TOKEN"):
+            os.environ["TELEGRAM_ADMIN_TOKEN"] = env_config["TELEGRAM_ADMIN_TOKEN"]
+        if env_config.get("TELEGRAM_ADMIN_CHAT_ID"):
+            os.environ["TELEGRAM_ADMIN_CHAT_ID"] = env_config["TELEGRAM_ADMIN_CHAT_ID"]
         
         # --- ESTADO DE CONEXIÓN VISUAL ---
         col_status1, col_status2 = st.columns(2)
